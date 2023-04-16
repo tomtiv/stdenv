@@ -1,7 +1,4 @@
 *~
-# /src/*.sh
-# /userdata/.local/share/*
-# /userdata/bin/*
 .DS_Store
 .vscode
 .fuse_hidden*
@@ -10,6 +7,7 @@
 
 .gitlab
 userdata/.config/.old-files
-userdata/.md
+userdata/.md*
 userdata/.to.be.reviwed
-userdata/scripts
+userdata/.to.be.reviwed/*
+userdata/scripts*
