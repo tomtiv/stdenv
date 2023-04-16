@@ -1,0 +1,32 @@
+version: 0.1
+log:
+  level: info
+  formatter: text
+  fields:
+    service: registry
+    environment: production
+storage: {"filesystem":{"rootdirectory":"/var/opt/gitlab/gitlab-rails/shared/registry"},"cache":{"blobdescriptor":"inmemory"},"delete":{"enabled":true}}
+http:
+  addr: localhost:5010
+  secret: "5995eac6d85a8ef0e4198c210d1490b3673190162eee22e3c50e07cabdfe941e25431a1eb4036bcb9170ef587628f815984452e39ad65c838abcd358fcf4304a"
+  headers:
+    X-Content-Type-Options: [nosniff]
+  debug:
+    addr: localhost:5001
+    prometheus:
+      enabled: true
+      path: /metrics
+health:
+  storagedriver:
+    enabled: true
+    interval: 10s
+    threshold: 3
+auth:
+  token:
+    realm: https://gl.tomtiv.me/jwt/auth
+    service: container_registry
+    issuer: omnibus-gitlab-issuer
+    rootcertbundle: /var/opt/gitlab/registry/gitlab-registry.crt
+    autoredirect: false
+validation:
+  disabled: true

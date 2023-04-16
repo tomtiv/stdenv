@@ -1,0 +1,11 @@
+curl 'http://192.168.0.42:8181/modules/MMM-RocketLeagueZ/MMM-RocketLeagueZ.js'  /
+-H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:106.0) Gecko/20100101 Firefox/106.0' 
+-H 'Accept: */*' 
+-H 'Accept-Language: en-CA,en-US;q=0.7,en;q=0.3' 
+-H 'Accept-Encoding: gzip, deflate' 
+-H 'DNT: 1' 
+-H 'Connection: keep-alive' 
+-H 'Cookie: MMPM-marketplace-packages-page-size=10; MMPM-local-packages-page-size=10; MMPM-external-packages-page-size=10' 
+-H 'Sec-GPC: 1' 
+-H 'If-Modified-Since: Thu, 03 Nov 2022 04:16:24 GMT' 
+-H 'If-None-Match: W/"13a6-1843bb45383"'
