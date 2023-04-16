@@ -1,13 +1,8 @@
-*~
 .DS_Store
 .vscode
-.fuse_hidden*
-.directory
 .Trash-*
-
 .gitlab
 userdata/.config/.old-files
-userdata/.md*
+userdata/.md
 userdata/.to.be.reviwed
-userdata/.to.be.reviwed/*
-userdata/scripts*
+src
