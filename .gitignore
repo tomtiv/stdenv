@@ -1,8 +1,7 @@
 .DS_Store
 .vscode
 .Trash-*
-.gitlab
-userdata/.config/.old-files
-userdata/.md
-userdata/.to.be.reviwed
-src
+api
+.fonts
+TabNine
+*.ssh
